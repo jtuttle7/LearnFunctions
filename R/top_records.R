@@ -10,7 +10,8 @@
 top_records <- function(n = 5, df, groupings){
 
   vals <-
-    group_by_at(vars(one_of(groupings))) %>%
+    df %>%
+    group_by_at(vars(groupings)) %>%
     summarize(
       count = n()
       ) %>%

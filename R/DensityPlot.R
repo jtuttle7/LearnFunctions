@@ -5,11 +5,13 @@
 #'
 #' @export
 #'
+#' @import ggplot2
+#'
 
 DensityPlot <- function(df, var){
 
-  require(ggplot2)
+  ggplot(df, aes_string(var)) +
+    geom_density(fill = 'navy blue') +
+    theme_bw()# Plot the density
 
-  ggplot(df, aes(var)) +
-    geom_density()                # Plot the density
 }
