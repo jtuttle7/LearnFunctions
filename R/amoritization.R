@@ -39,6 +39,7 @@ amoritization <- function(P=30000,int=5.0,mth_pay=500,xtra=0){
 
   print(paste0("With a monthly payment of $", mth_pay, ", while paying an additional $", xtra, " to principle each month, the original loan of $", P_init, " is paid off in ", mth_cnt, " months, and $", tot_int, " is paid in interest"))
 
+  return(mth_cnt)
 }
 
 

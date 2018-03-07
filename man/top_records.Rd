@@ -9,7 +9,7 @@ top_records(n = 5, df, groupings)
 \arguments{
   \item{n}{number of top records from dataset to return}
   \item{df}{data.frame object containing the data of interest}
-  \item{groupings}{character vector that is the variable(s) by which to group_by for analysis}
+  \item{groupings}{character vector that is the variable(s) by which to group_by for analysis. This must be input as a string or character vector}
 }
 \details{
 I don't know why it won't work. The code below works just fine:

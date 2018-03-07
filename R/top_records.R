@@ -2,8 +2,9 @@
 #'
 #' @param n number of top records from dataset to return
 #' @param df data.frame object containing the data of interest
-#' @param groupings character vector that is the variable(s) by which to group_by for analysis
+#' @param groupings character vector that is the variable(s) by which to group_by for analysis. This must be input as a string or character vector
 #'
+#' @import dplyr
 #' @export
 #'
 
